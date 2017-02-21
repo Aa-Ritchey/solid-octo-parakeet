@@ -1,0 +1,97 @@
+/* Changes the coloring and typeface of the admin UI. */
+
+
+/* ----------- */
+/* -- Reset -- */
+/* ----------- */
+#adminmenu, #adminmenuback, #adminmenuwrap {
+	background: none;
+}
+
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
+	/* Some kind of special dropdown menu. */
+	background: none;
+}
+
+
+
+/* -------------- */
+/* -- Top Rail -- */
+/* -------------- */
+
+#wpadminbar {
+	background: linear-gradient(0deg, #800080, #008000);
+}
+
+/* When hovering over a top rail element. */
+#wpadminbar .ab-top-menu > li.menupop.hover > .ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus, #wpadminbar.nojs .ab-top-menu > li.menupop:hover > .ab-item, #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item, #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus {
+	background-color: rgba(255,255,255,0.2);
+}
+
+/* The menu items which drop from the top rail. */
+#wpadminbar .menupop .ab-sub-wrapper {
+	background-color: #800080;
+}
+
+
+
+/* ---------------- */
+/* -- Right Rail -- */
+/* ---------------- */
+
+/* If using only #adminmenu, the background color will not extend
+/*   to the bottom of the page. */
+#adminmenuback {
+	background: linear-gradient(90deg, #800000, #008080);
+}
+
+#adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top {
+	background: linear-gradient(90deg, #804000, #00a080);
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, #adminmenu .wp-submenu, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu {
+	background-color: rgba(0, 255, 0, 0.2);
+}
+
+#adminmenu .wp-submenu {
+	background-color: #008080;
+}
+
+#adminmenu a:hover, #adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus {
+	background-color: rgba(0, 255, 0, 0.2);
+}
+
+/*
+
+#adminmenuwrap {
+	background: rgba(0,0,0,0.2);
+}
+
+#adminmenu {
+	background: none;
+}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+	background: linear-gradient(90deg, #C00000, #FFC000);
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu {
+	background: rgba(0,0,0,0.2);
+}
+*/
+
+#wpadminbar *, #adminmenu {
+
+	/* An arbitrary font. */
+	font-family: "Aubrey";
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+#adminmenu .wp-submenu-head, #adminmenu a.menu-top {
+	font-size: 18px;
+}
+
+#adminmenu .wp-submenu a {
+	font-size: 16px;
+}
