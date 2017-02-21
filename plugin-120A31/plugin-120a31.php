@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) or die();
 // Are we in the admin section?
 if (is_admin()) {
 
-    add_action('admin_enqueue_scripts', 'x120a31_admin_enqueue_scripts');
+	add_action('admin_enqueue_scripts', 'x120a31_admin_enqueue_scripts');
 	add_action('admin_enqueue_scripts', 'x120a31_google_fonts');
 
 }
